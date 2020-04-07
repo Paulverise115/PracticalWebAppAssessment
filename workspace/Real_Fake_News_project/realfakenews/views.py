@@ -16,5 +16,5 @@ def detail(request, story_id):
         story = Story.objects.get(pk=story_id)
     except Story.DoesNotExist:
         raise Http404("Story does not exist")
-    return render(request, 'polls/detail.html', {'story': story})
+    return render(request, 'realfakenews/detail.html', {'story': story})
 
