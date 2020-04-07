@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            body{font-family: Arial, Helvetica, sans-serif;}
+            body{background-color:powderblue;}
+            h2{color: deeppink;}
+        </style>
         <title>The Story</title>
     </head>
 
     <body>
-        <h1>Real Fake News</h1>
+        <h1 style="font-size: 300%">Real Fake News</h1>
     {% if latest_story_list %}
         <ul>
         {% for story in latest_story_list %}
