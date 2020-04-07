@@ -1,9 +1,11 @@
 {% if latest_story_list %}
     <ul>
     {% for story in latest_story_list %}
-        <li><a href="/realfakenews/{{ story.id }}/">{{ story.story_text }}</a></li>
+        <h1>{{ story.story_text }}</h1>
+        <h2>{{story.pub_date}}</h2>
+        <p>{{story.story_body_text}}</p>
     {% endfor %}
     </ul>
 {% else %}
-    <p>No polls are available.</p>
+    <p>No storys are available.</p>
 {% endif %}

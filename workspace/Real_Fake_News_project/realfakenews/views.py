@@ -6,7 +6,7 @@ from django.http import Http404
 
 
 def index(request):
-    latest_story_list = Story.objects.order_by('-pub_date')[:5]
+    latest_story_list = Story.objects.order_by('-pub_date')
     context = {'latest_story_list': latest_story_list}
     return render(request, 'realfakenews/index.html', context)
 
